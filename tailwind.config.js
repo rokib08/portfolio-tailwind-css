@@ -1,5 +1,6 @@
 module.exports = {
   content: ['index.html', './node_modules/tw-elements/dist/js/**/*.js'],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -10,7 +11,7 @@ module.exports = {
         primary: '#3b82f6',
       },
       screens:{
-        '2xl': '1120px',
+        '2xl': '1320px',
       },
     },
   },
