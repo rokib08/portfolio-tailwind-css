@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kopsyah MSI</title>
     <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/aos-master/aos.css"/>
     <link rel="shortcut icon" href="dist/img/log1.ico" />
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -21,10 +22,11 @@
     <header class="bg-tranparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center jestify-between relative">
-                <div class="px-4">
+                <div class="flex items-center py-2 px-4">
                     <a href="#home" class="font-bold text-lg text-primary block py-6">
                         <img src="dist/img/log1.ico" alt="" class="w-16 lg:w-20">
                     </a>
+                    <h3 class="invisible md:visible font-bold text-base text-white">Kopsyah MSI</h3>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden"> 
@@ -32,36 +34,36 @@
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
-                    <nav id="nav-menu" class="hidden absolute py-5  bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:w-max-full lg:shadow-none lg:rounded-none dark:bg-slate-900 lg:dark:bg-transparent dark:shadow-slate-500">
-                        <ul class="block lg:flex lg:mx-80">
+                    <nav id="nav-menu" class="hidden absolute py-5  bg-primary shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:w-max-full lg:shadow-none lg:rounded-none dark:bg-slate-900 lg:dark:bg-transparent dark:shadow-slate-500">
+                        <ul class="block lg:flex lg:mx-60">
                             <li class="group">
-                                <a href="#home" class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                                <a href="#home"  class="text-base text-white py-2 mx-8 flex group-hover:text-slate-600 dark:text-white dark:group-hover:text-primary">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-slate-900 py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang</a>
+                                <a href="#about"  class="text-base text-white  py-2 mx-8 flex group-hover:text-slate-600 dark:text-white dark:group-hover:text-primary">Tentang</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-slate-900 py-2 mx-8 flex  group-hover:text-primary dark:text-white">Portfolio</a>
+                                <a href="#portfolio"  class="text-base text-white  py-2 mx-8 flex  group-hover:text-slate-600 dark:text-white dark:group-hover:text-primary">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#mitra" class="text-base text-slate-900 py-2 mx-8 flex  group-hover:text-primary dark:text-white">Mitra</a>
+                                <a href="#mitra"  class="text-base text-white  py-2 mx-8 flex  group-hover:text-slate-600 dark:text-white dark:group-hover:text-primary">Mitra</a>
                             </li>
                             <li class="group">
-                                <a href="#blog" class="text-base text-slate-900 py-2 mx-8 flex  group-hover:text-primary dark:text-white">Blog</a>
+                                <a href="#blog"  class="text-base text-white  py-2 mx-8 flex  group-hover:text-slate-600 dark:text-white dark:group-hover:text-primary">Cabang</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-slate-900 py-2 mx-8 flex  group-hover:text-primary dark:text-white">Contact</a>
+                                <a href="#contact"  class="text-base text-white  py-2 mx-8 flex  group-hover:text-slate-600 dark:text-white dark:group-hover:text-primary">Contact</a>
                             </li>
                             <li class="px-8 items-center mt-2">
                                 <div class="flex">
-                                    <span class="mr-2 text-sm text-slate-500">light</span>
+                                    <span class="mr-2 text-sm text-white">light</span>
                                     <input type="checkbox" class="hidden" id="dark-toggle"/>
                                     <label for="dark-toggle">
                                         <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
                                             <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
                                         </div>
                                     </label>
-                                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                                    <span class="ml-2 text-sm text-white">dark</span>
                                 </div>
                             </li>
                         </ul>
@@ -74,26 +76,27 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 dark:bg-slate-900">
+    <section id="home" class="pt-36 pb-32 bg-primary dark:bg-slate-900">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl">Assalamualaikum Wr. Wb.<span class="block font-bold text-slate-900 text-4xl mt-1 lg:text-5xl dark:text-white">Kopsyah MSI</span></h1>
-                    <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl">Mitra Sejahtera Raya Indonesia</h2>
-                    <p class="font-medium text-slate-500 mb-10 leading-relaxed">Bersama <span class="text-primary font-bold">KOPSYAH MSI</span> Membangun Kesejahteraan</p>
+                <div class="w-full self-center px-4 lg:w-1/2" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <h1 class="text-base font-semibold text-white md:text-xl">Assalamualaikum Wr. Wb., Kami<span class="block font-bold text-white text-4xl mt-1 lg:text-5xl dark:text-primary">Kopsyah MSI</span></h1>
+                    <h2 class="font-medium text-slate-300 text-lg mb-5 lg:text-2xl">Mitra Sejahtera Raya Indonesia</h2>
+                    <p class="font-medium text-slate-300 mb-10 leading-relaxed">Bersama <span class="text-white font-bold dark:text-primary">KOPSYAH MSI</span> Membangun Kesejahteraan</p>
 
-                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Kami</a>
+                    <a href="#" class="text-base font-semibold text-white bg-primary border border-slate-300 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Kami</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
-                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                    <div class="relative mt-16 lg:mt-9 lg:right-0">
                         
-                        <div
+                        <!-- <div
   id="carouselDarkVariant"
-  class="carousel slide carousel-fade carousel-dark relative"
+  class="carousel slide carousel-fade relative"
   data-bs-ride="carousel"
->
+> -->
   <!-- Indicators -->
-  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+  <!-- <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
     <button
       data-bs-target="#carouselDarkVariant"
       data-bs-slide-to="0"
@@ -111,53 +114,53 @@
       data-bs-slide-to="2"
       aria-label="Slide 1"
     ></button>
-  </div>
+  </div> -->
 
   <!-- Inner -->
-  <div class="carousel-inner relative w-full overflow-hidden">
+  <!-- <div class="carousel-inner relative w-full overflow-hidden"> -->
     <!-- Single item -->
-    <div class="carousel-item active relative float-left w-full">
+    <!-- <div class="carousel-item active relative float-left w-full">
       <img
         src="dist/img/msi.png"
         class="block w-full"
-        alt="Motorbike Smoke"
-      />
-      <div class="carousel-caption hidden md:block absolute text-center">
+        alt="RAT"
+      /> -->
+      <!-- <div class="carousel-caption hidden md:block absolute text-center">
         <h5 class="font-semibold text-xl text-primary">RAT</h5>
         <p></p>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
 
     <!-- Single item -->
-    <div class="carousel-item relative float-left w-full">
+    <!-- <div class="carousel-item relative float-left w-full">
       <img
         src="dist/img/rokib.png"
         class="block w-full"
-        alt="Mountaintop"
-       class='w-6'/>
-      <div class="carousel-caption hidden md:block absolute text-center">
+        alt="Rokib"
+        /> -->
+      <!-- <div class="carousel-caption hidden md:block absolute text-center">
         <h5 class="text-xl">Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
 
     <!-- Single item -->
-    <div class="carousel-item relative float-left w-full">
+    <!-- <div class="carousel-item relative float-left w-full">
       <img
         src="dist/img/log1.ico"
         class="block w-full"
-        alt="Woman Reading a Book"
-      />
-      <div class="carousel-caption hidden md:block absolute text-center">
+        alt="logo"
+      /> -->
+      <!-- <div class="carousel-caption hidden md:block absolute text-center">
         <h5 class="text-xl">Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
+      </div> -->
+    <!-- </div>
+  </div> -->
   <!-- Inner -->
 
   <!-- Controls -->
-  <button
+  <!-- <button
     class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
     type="button"
     data-bs-target="#carouselDarkVariant"
@@ -175,14 +178,19 @@
     <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div> -->
                         
                         
-                        <!-- <img src="dist/img/msi.png" alt="rokib" width="w-full" height="h-full" class="max-w-full mx-auto"> -->
-                        <span class="absolute -bottom-11  left-1/2 -translate-x-1/2 md:scale-125">
-                            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#3b82f6" d="M51.1,-19.6C58,4.4,49.5,30.4,34.4,39.4C19.4,48.4,-2,40.4,-22.1,26.7C-42.1,13,-60.7,-6.4,-56.7,-26.4C-52.8,-46.4,-26.4,-67.1,-2.1,-66.4C22.2,-65.7,44.3,-43.7,51.1,-19.6Z" transform="translate(100 100) scale(1.2)" />
+                        <img src="dist/img/msi.png" alt="msi" width="w-full" height="h-full" class="relative z-10 max-w-full mx-auto">
+                        <span class="absolute bottom-0  md:bottom-40 left-1/2 -translate-x-1/2 md:scale-125">
+                            
+                            <svg width="200" height="200"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#ffffff" d="M65.3,-52.1C81,-32.3,87.8,-5.4,82.2,18.7C76.6,42.7,58.8,63.8,36.5,73.8C14.2,83.7,-12.4,82.5,-34.8,71.9C-57.2,61.3,-75.3,41.3,-80.5,18.3C-85.8,-4.6,-78.2,-30.5,-62.7,-50.2C-47.1,-70,-23.6,-83.6,0.6,-84.1C24.8,-84.5,49.5,-71.9,65.3,-52.1Z" transform="translate(100 100) scale(1.2)" />
                               </svg>
+                            
+                            <!-- <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#3b82f6" d="M51.1,-19.6C58,4.4,49.5,30.4,34.4,39.4C19.4,48.4,-2,40.4,-22.1,26.7C-42.1,13,-60.7,-6.4,-56.7,-26.4C-52.8,-46.4,-26.4,-67.1,-2.1,-66.4C22.2,-65.7,44.3,-43.7,51.1,-19.6Z" transform="translate(100 100) scale(1.2)" />
+                              </svg> -->
                         </span>
                     </div>
                 </div>
@@ -192,28 +200,61 @@
     <!-- Hereo Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-slate-900">
+    <section id="about" class="pt-14 pb-32 dark:bg-slate-900">
         <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-ful px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-primary mb-3">Tentang Saya</h4>
-                    <h2 class="font-bold text-slate-900 text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Yuk, Belajar Programming dengan saya</h2>
-                    <p class="font-medium text-base text-slate-500 max-w-xl lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias reprehenderit culpa porro quidem distinctio sit?</p>
+            <div class="flex flex-wrap justify-between bg-primary rounded-xl shadow-lg overflow-hidden dark:bg-slate-800">
+                <div class="w-full px-2 mx-10 py-5 lg:w-1/3 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-4 dark:bg-slate-800">
+                        <img src="dist/img/build.jpg" alt="Photo by <a href='https://unsplash.com/@adam_29063?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Adam Bignell</a> on <a href='https://unsplash.com/s/photos/office-building?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>
+                        " class="w-full h-56 object-fill xl:h-auto" >
+                        
+                    </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-slate-900 text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Mari Berteman</h3>
-                    <p class="font-medium text-base text-slate-500 mb-6 lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam porro quis voluptate asperiores quasi maiores ad deleniti fugiat.</p>
+                <div class="w-ful px-2 mx-20 lg:w-1/3" >
+                    <!-- <h4 class="font-bold uppercase text-white mb-3">Tentang Kami</h4> -->
+                    <div data-aos="fade-up"
+                    data-aos-duration="3000">
+                    <h2 class="font-bold uppercase mt-2 mb-2 text-white text-3xl  lg:mt-20 max-w-md lg:text-4xl dark:text-white">Visi</h2>
+                    <p class="font-medium text-base text-white max-w-xl lg:text-lg">
+                        Menjadi koperasi sebagai mitra yang amanah dalam mewujudkan harapan dan kesejahteraan anggotanya.</p>
+                </div>
+                    
+                    
+                        
+                        
+                <div data-aos="fade-up"
+                data-aos-duration="3000">
+                <h3 class="font-semibold uppercase mt-5 text-white text-2xl mb-2 lg:text-3xl lg:pt-10 dark:text-white">misi</h3>
+                <!-- <p class="font-medium text-base text-slate-500 mb-6 lg:text-lg"> -->
+
+                    <ol class="list-decimal font-medium text-base text-white max-w-xl lg:text-lg mb-3">
+                        <li>Menciptakan kesejahteraan bagi para anggota yang berkesinambungan.</li>
+                        <li>berdaya guna sebagai mitra strategis dan terpercaya bagi anggota.</li>
+                        <li>berkontribusi dalam perkembangan perkoprasian di indonesia.</li>
+                        <li>mengelola koperasi dan unit usaha secara profesional dengan menerapkan prinsip Good Corporate Governance.</li>
+                    </ol>
+            
+                        
+
+                    <!-- </p> -->
                     <div class="flex items-center">
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/kopsyah_msi/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center item-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <a href="https://www.instagram.com/kopsyah_msi/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center item-center border border-slate-300 text-slate-300 hover:border-orange-600 hover:bg-white hover:text-orange-600">
                             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
                         </a>
 
                         <!-- Facebook -->
-                        <a href="https://www.Facebook.com/kopsyah_msi/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center item-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <a href="https://www.Facebook.com/kopsyah_msi/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center item-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-white hover:text-primary">
                             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>                        </a>
                     </div>
                 </div>
+            </div>
+                <span class="w-20 h-20 bg-blue-300 border-2 rotate-45 rounded-lg shadow-lg scale-150 md:w-40 md:h-40"></span>
+
+                <!-- <div class="w-full px-4 lg:w-1/2">
+                    
+                </div> -->
+            
             </div>
         </div>
     </section>
@@ -223,10 +264,13 @@
     <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
+                <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-up"
+                data-aos-duration="3000">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-3xl text-slate-900 mb-4  sm:text-4xl lg:text-5xl dark:text-white">Kegiatan</h2>
-                    <p class="font-medium text-md text-slate-500 md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo a iste sapiente doloremque eius placeat vel, rerum accusamus eaque libero!</p>
+                    <h2 class="font-bold text-3xl text-slate-900 mb-4  sm:text-4xl lg:text-5xl dark:text-white">Galeri</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg">
+                        Dokumentasi Kegiatan Kopsyah Mitra Sejahtera Raya Indonesia.
+                    </p>
                 </div>
             </div>
             <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
@@ -234,59 +278,110 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/1.png" alt="SK" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">SK KEMENKUMHAM</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <div data-aos="fade-down"
+                    data-aos-duration="3000">
+                        <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">SK KEMENKUMHAM</h3>
+                    <p class="font-medium text-base text-slate-500">
+                        NOMOR : AHU-0002943.AH.01.27 TAHUN 2021
+                    </p>
+                    </div>
+                    
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/2.png" alt="Majelis" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Majelis</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <div data-aos="fade-down"
+                    data-aos-duration="3000">
+                    <h3 class="font-semibold uppercase text-md text-slate-900 mt-5 mb-3 dark:text-white">Pemberdayaan</h3>
+                    <p class="font-medium text-base text-slate-500">
+                        Kopsyah MSI melakukan kunjungan pemberdayaan kepada anggota Majelis.
+                    </p>
+                </div>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/3.png" alt="santunan" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Santunan Yatim Piyatu</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <div data-aos="fade-down"
+                    data-aos-duration="1500">
+                    <h3 class="font-semibold uppercase text-md text-slate-900 mt-5 mb-3 dark:text-white">Santunan Yatim Piyatu</h3>
+                    <p class="font-medium text-base text-slate-500">
+                        Acara Santunan Yatim Piyatu yang di laksanakan di Kopsyah MSI Cabang Gunung Kaler
+                    </p>
+                    </div>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/4.png" alt="sijaka" width="w-full">
                     </div>
+                    <div data-aos="fade-down"
+                    data-aos-duration="1500">
                     <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">SIJAKA</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <p class="font-medium text-base text-slate-500">
+                        Dokumentasi Anggota Yang Mendaftar Produk Simpanan Berjangka (SIJAKA) 
+                    </p>
+                    </div>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/5.png" alt="nib" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Distribusi Perizinan Usaha (NIB) Cab.Kemiri</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <div data-aos="fade-down"
+                    data-aos-duration="1500">
+                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">NIB</h3>
+                    <p class="font-medium text-base text-slate-500">Distribusi Perizinan Usaha (NIB) Cab.Kemiri</p>
+                </div>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/6.png" alt="nib" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Distribusi Perizinan Usaha (NIB) Cab.Teluknaga</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <div data-aos="fade-down"
+                    data-aos-duration="1500">
+                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">
+                        NIB
+                    </h3>
+                    <p class="font-medium text-base text-slate-500">
+                        Distribusi Perizinan Usaha (NIB) Cab.Teluknaga
+                    </p>
+                </div>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/7.png" alt="kunjungan" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Kunjungan Dinas Koperasi dan UMKM</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <div data-aos="fade-down"
+                    data-aos-duration="1500">
+                    <h3 class="font-semibold uppercase text-md text-slate-900 mt-5 mb-3 dark:text-white">Dinas Koperasi dan UMKM</h3>
+                    <p class="font-medium text-base text-slate-500">
+                        Kunjungan Dinas Koperasi dan UMKM di Kopsyah MSI cabang sukadiri.
+                    </p>
+                </div>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/8.png" alt="Sosialisasi" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Sosialisasi</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
+                    <div data-aos="fade-down"
+                    data-aos-duration="1500">
+                    <h3 class="font-semibold uppercase text-md text-slate-900 mt-5 mb-3 dark:text-white">Sosialisasi</h3>
+                    <p class="font-medium text-base text-slate-500">Kunjungan Kopsyah MSI Cabang Kemiri Ke Kantor Desa Patramanggala.</p>
+                </div>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portfolio/12.png" alt="Sosialisasi" width="w-full">
+                    </div>
+                    <div data-aos="fade-down"
+                    data-aos-duration="1500">
+                    <h3 class="font-semibold uppercase text-md text-slate-900 mt-5 mb-3 dark:text-white">Sosialisasi</h3>
+                    <p class="font-medium text-base text-slate-500">
+                        Kunjungan Kopsyah MSI Cabang Sukamulya.
+                    </p>
+                    </div>
+                </div>
+                <!-- <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="dist/img/portfolio/9.png" alt="Sosialisasi" width="w-full">
                     </div>
@@ -306,51 +401,59 @@
                     </div>
                     <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Sosialisasi</h3>
                     <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/portfolio/12.png" alt="Sosialisasi" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-md text-slate-900 mt-5 mb-3 dark:text-white">Sosialisasi</h3>
-                    <p class="font-medium text-base text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam quasi enim.</p>
-                </div>
+                </div> -->
+                
             </div>
         </div>
     </section>
     <!-- Portfolio End -->
 
     <!-- Mitra Section Start -->
-    <section id="mitra" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
+    <section id="mitra" class="pt-36 pb-32 bg-slate-700 dark:bg-slate-300">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Mitra Financial</h4>
-                    <h2 class="font-bold text-3xl text-white mb-4 sm:text-4xl lg:text-5xl dark:text-slate-900">Yang Pernah Bekerjasama</h2>
-                    <p class="font-medium text-md text-slate-500 md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur similique ad!</p>
+                    <h2 class="font-bold text-3xl text-white mb-4 sm:text-4xl lg:text-5xl dark:text-slate-900">Mitra Kopsyah MSI</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg">
+                        Merupakan Mitra yang masih bekerjasama dan yang pernah bekerjasama dengan Kopsyah MSI
+                    </p>
                 </div>
             </div>
 
 
             <div class="w-full px-4">
                 <div class="flex flex-wrap items-center justify-center">
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                    
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="fade-right"
+                    data-aos-offset="250"
+                    data-aos-easing="ease-in-sine">
+                        <img src="dist/img/mitra/hasanah.png" alt="botani">
+                    </a>
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="fade-right"
+                    data-aos-offset="250"
+                    data-aos-easing="ease-in-sine">
                         <img src="dist/img/mitra/botani.png" alt="Hasanah">
                     </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/mitra/hasanah.png" alt="Hasanah">
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="fade-right"
+                    data-aos-offset="250"
+                    data-aos-easing="ease-in-sine">
+                        <img src="dist/img/mitra/riyal.png" alt="muamalat">
                     </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/mitra/muamalat.png" alt="Hasanah">
+
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="fade-left"
+                    data-aos-offset="250"
+                    data-aos-easing="ease-in-sine">
+                        <img src="dist/img/mitra/mulia.png" alt="mulia">
                     </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/mitra/mulia.png" alt="Hasanah">
+                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="fade-left"
+                    data-aos-offset="250"
+                    data-aos-easing="ease-in-sine">
+                        <img src="dist/img/mitra/muamalat.png" alt="riyal">
                     </a>
-                    <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/mitra/riyal.png" alt="Hasanah">
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Mitra Section end -->
 
@@ -359,47 +462,110 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-                    <h2 class="font-bold text-3xl text-slate-900 mb-4  sm:text-4xl lg:text-5xl dark:text-white">Tulisan Terkini</h2>
-                    <p class="font-medium text-md text-slate-500 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non magni facilis corrupti!</p>
+                    <h4 class="font-semibold text-lg text-primary mb-2">Cabang</h4>
+                    <h2 class="font-bold text-3xl text-slate-900 mb-4  sm:text-4xl lg:text-5xl dark:text-white">Kantor Cabang Kopsyah MSI</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg">
+                        Merupakan informasi kantor cabang Kopsyah MSI yang tersebar di wilayah Banten.
+                    </p>
                 </div>
             </div>
 
 
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="flex flex-wrap justify-center" data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="w-full px-4 py-0 lg:w-1/3 xl:w-1/6">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-                        <img src="https://source.unsplash.com/360x200?programming" alt="programming" class="w-full" >
+                        <img src="dist/img/cabang/rajeg01.jpeg" alt="rajeg" class="w-full h-36 object-cover" >
                         <div class="py-8 px-6">
                             <h3>
-                                <a href="#" class="block mb-3 font-semibold text-xl text-slate-900 hover:text-primary truncate dark:text-white">Tips Belajar Programming</a>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Rajeg</a>
                             </h3>
-                            <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="w-full px-4 lg:w-1/3 xl:w-1/6">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-                        <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="Mechanical Keyboard" class="w-full" >
+                        <img src="dist/img/cabang/teluknaga.jpeg" alt="Mechanical Keyboard" class="w-full h-36 object-cover" >
                         <div class="py-8 px-6">
                             <h3>
-                                <a href="#" class="block mb-3 font-semibold text-xl text-slate-900 hover:text-primary truncate dark:text-white">Review Keyboard GMMK Pro</a>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Teluknaga</a>
                             </h3>
-                            <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, quaerat exercitationem? Itaque.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, quaerat exercitationem? Itaque.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="w-full px-4 lg:w-1/3 xl:w-1/6">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-                        <img src="https://source.unsplash.com/360x200?coffee" alt="Coffee" class="w-full" >
+                        <img src="dist/img/cabang/pakuhaji02.jpeg" alt="Coffee" class="w-full h-36 object-cover" >
                         <div class="py-8 px-6">
                             <h3>
-                                <a href="#" class="block mb-3 font-semibold text-xl text-slate-900 hover:text-primary truncate dark:text-white">Menikmati Secangkir Kopi</a>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Pakuhaji</a>
                             </h3>
-                            <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque esse tempore iste ipsa molestiae adipisci.</p>
-                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque esse tempore iste ipsa molestiae adipisci.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/3 xl:w-1/6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+                        <img src="dist/img/cabang/sukadiri02.jpeg" alt="Coffee" class="w-full h-36 object-cover" >
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Sukadiri</a>
+                            </h3>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque esse tempore iste ipsa molestiae adipisci.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/3 xl:w-1/6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+                        <img src="dist/img/cabang/gk01.jpeg" alt="Coffee" class="w-full h-36 object-cover" >
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Gunung Kaler</a>
+                            </h3>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque esse tempore iste ipsa molestiae adipisci.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/3 xl:w-1/6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+                        <img src="dist/img/cabang/kemiri02.png" alt="Coffee" class="w-full h-36 object-cover" >
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Kemiri</a>
+                            </h3>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque esse tempore iste ipsa molestiae adipisci.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/3 xl:w-1/6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+                        <img src="dist/img/cabang/sukamulya02.png" alt="Coffee" class="w-full h-36 object-cover" >
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Sukamulya</a>
+                            </h3>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque esse tempore iste ipsa molestiae adipisci.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/3 xl:w-1/6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+                        <img src="dist/img/cabang/mekar01.png" alt="Coffee" class="w-full h-36 object-cover" >
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#" class="block mb-3 font-semibold text-sm text-slate-900 hover:text-primary truncate dark:text-white">Cabang Mekar Baru</a>
+                            </h3>
+                            <!-- <p class="font-medium text-base text-slate-500 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas atque esse tempore iste ipsa molestiae adipisci.</p> -->
+                            <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -412,10 +578,11 @@
     <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
+                <div class="max-w-xl mx-auto text-center mb-16" data-aos="fade-up"
+                data-aos-duration="3000">
                     <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
                     <h2 class="font-bold text-3xl text-slate-900 mb-4  sm:text-4xl lg:text-5xl dark:text-white">Hubungi Kami</h2>
-                    <p class="font-medium text-md text-slate-500 md:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, voluptates!</p>
+                    <p class="font-medium text-md text-slate-500 md:text-lg"></p>
                 </div>
             </div>
 
@@ -514,5 +681,9 @@
     <!-- Back To end -->
     <!-- <script src="./node_modules/tw-elements/dist/js/index.min.js"></script> -->
 <script src="dist/js/script.js"></script>
+<script src="dist/aos-master/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
