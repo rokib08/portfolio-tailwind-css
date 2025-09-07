@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['index.html', './node_modules/tw-elements/dist/js/**/*.js'],
+  content: ['index.html', 'doa.html','./node_modules/tw-elements/dist/js/**/*.js'],
   darkMode: 'class',
   theme: {
     container: {
